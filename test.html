@@ -1,0 +1,46 @@
+<html>
+<head>
+<script lang = "javascript-and-the-dom">
+    console.log(this)
+    function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+    }
+    var string = 'this'
+    var adjective = ['big','small','visible','full','hollow','hapless','lazy','hurt','rhetorical','plausible']
+    var noun = ['car','bus','height','wedding','championship','customer','situation','oven','affair','president']
+    var verb = ['runs','breaks','confuses','scorches','earns','trusts','times','alerts','fills','chops']
+    var adverb = ['smoothly','slowly','again','kindly','scarily','elegantly','positively','strongly','upbeatly','blissfully']
+    var rand1 = getRandomInt(10)
+    var rand2 = getRandomInt(10)
+    var rand3 = getRandomInt(10)
+    var rand4 = getRandomInt(10)
+    function poetry(){
+        var rand1 = getRandomInt(10)
+        var rand2 = getRandomInt(10)
+        var rand3 = getRandomInt(10)
+        var rand4 = getRandomInt(10)
+        'The' + ' ' + adjective[rand1] + ' ' + noun[rand2]+ ' ' + verb[rand3]+ ' ' + adverb[rand4]
+        document.getElementById('id1').innerText = 'The' + ' ' + adjective[rand1] + ' ' + noun[rand2]+ ' ' + verb[rand3]+ ' ' + adverb[rand4]
+
+    }
+</script>
+<style>
+    p {font-size: 100;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+
+</style>
+
+</head>
+<body>
+    <button onclick="alert('The'+ ' ' +adjective[rand1] + ' ' + noun[rand2]+ ' ' + verb[rand3]+ ' ' + adverb[rand4]);">Alert</button>
+    <button onclick="poetry()">Appear</button>
+    <p id="id1" ></p>
+
+    <label for="story">Tell us your story:</label>
+
+    <textarea id="story" name="story" rows="5" cols="33">
+    It was a dark and stormy night...
+</textarea>
+</body>
+</head>
+</html>
